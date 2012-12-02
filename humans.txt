@@ -1,0 +1,14 @@
+/* TEAM */
+	Developer: Eric R
+	Twitter: @NumEricR
+	Location: Nantes, France
+
+
+/* SITE */
+	Standards: HTML5, CSS
+	Software: SublimeText 2, Firefox, Mac OS X
+	Repo: http://github.com/NumEricR/VR-Friends-Rankings
+
+
+
+See http://humanstxt.org for more informations about this file
