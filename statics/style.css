@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+
+/* Base
+   =========================== */
+
+body {
+	margin: 0 auto;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 62.5%;
+	text-align: center;
+	background: url(img/extra_clean_paper.png) repeat;
+}
+
+h1 {
+	margin-top: 40px;
+	font-size: 2.2em;
+	color: #b22222;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* Ranking
+   =========================== */
+
+.ranking {
+	width: 700px;
+	margin: 50px auto;
+	font-size: 1.4em;
+	border-collapse: collapse;
+}
+
+.ranking th {
+	padding: 10px 0;
+}
+
+.ranking tbody tr {
+	background: #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+.ranking tbody tr:nth-child(2n) {
+	background: #d6d4d4;
+}
+.ranking tbody tr:hover {
+	border-left: 20px solid #0a526b;
+	border-right: 20px solid #0a526b;
+}
+.ranking tbody tr:hover,
+.ranking tbody tr:hover a {
+	color: #fff;
+	background: #0a526b;
+}
+
+.ranking td {
+	padding: 7px;
+	line-height: 1.2em;
+	text-align: center;
+}
+.ranking tr td:first-of-type {
+	padding-left: 0;
+}
+.ranking tr td:last-of-type {
+	padding-right: 0;
+}
+.ranking td.left {
+	text-align: left;
+}
+
+
+/* Error message
+   =========================== */
+
+.error {
+	margin-top: 100px;
+	color: #b22222;
+}
+
+.error h1 {
+	margin-bottom: 50px;
+	font-size: 2.6em;
+}
+
+.error p {
+	font-size: 1.6em;
+}
+
+
+/* Footer
+   =========================== */
+
+footer {
+	width: 100%;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.2em;
+}
+.error + footer {
+	display: none;
+}
+
+footer a {
+	color: #696969;
+}
+footer a:visited {
+	color: #a9a9a9;
+}
+footer a:hover {
+	color: #e2001a;
+}
