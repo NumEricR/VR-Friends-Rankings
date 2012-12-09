@@ -5,7 +5,7 @@ It gives official rankings and the rankings among boats without paid credits. Th
 All informations are retrieved from [L'annexe des SO](http://vr-annexe.akroweb.fr).
 
 
-![Preview](Preview.png)
+![Preview](http://raw.github.com/NumEricR/VR-Friends-Rankings/master/Preview.png)
 
 
 
