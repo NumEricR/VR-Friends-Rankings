@@ -55,7 +55,7 @@ function _generate_all_rankings() {
 
 	ksort($boats_output);
 
-	$page_title = PAGE_TITLE . ' à ' . $update_time[0];
+	$page_title = PAGE_TITLE . ' &agrave; ' . $update_time[0];
 	
 	$i = 0;
 	foreach ($boats_output as $position => $boat_output) {
@@ -75,11 +75,11 @@ function _generate_all_rankings() {
 			<tr>
 				<th>#</th>
 				<th><abbr title="Sans Option(s)">SO</abbr></th>
-				<th>Evolution</th>
+				<th>&Eacute;volution</th>
 				<th><abbr title="Virtual Regatta">VR</abbr></th>
 				<th>Bateau</th>
 				<th>Distance</th>
-				<th>Ecart</th>
+				<th>&Eacute;cart</th>
 				<th>Profils</th>
 			</tr>
 		</thead>
@@ -161,7 +161,7 @@ function _extract_boat_ranking($boat, $req_output) {
 	// Modify path images an add alt attribute
 	$output = preg_replace('/<img src="img\//', '<img src="statics/img/', $output);
 	$output = preg_replace('/<img (.*?)flecher/', '<img alt="Places perdues" $1flecher', $output);
-	$output = preg_replace('/<img (.*?)flechev/', '<img alt="Places gagnées" $1flechev', $output);
+	$output = preg_replace('/<img (.*?)flechev/', '<img alt="Places gagn&eacute;es" $1flechev', $output);
 
 	// Add thousands separator
 	$output = preg_replace_callback('/(<td>)([0-9]{4,})/', '_add_thousands_separator', $output);

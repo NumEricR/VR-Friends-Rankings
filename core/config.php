@@ -10,11 +10,11 @@ $BOATS = array(
 );
 
 
-define(PAGE_TITLE, 'Classement Vendée Globe - Virtual Regatta');
+define(PAGE_TITLE, 'Classement Vend&eacute;e Globe - Virtual Regatta');
 
 define(ERROR_MSG_MULTIPLES_TIMES_UPDATE, 
-		'Les classements récupérés ne sont pas tous établis à la même heure.<br /><br />' . 
-		'<a href="?a=refreshCache">Régénérez le classement général</a>');
+		'Les classements r&eacute;cup&eacute;r&eacute;s ne sont pas tous &eacute;tablis &agrave; la m&ecirc;me heure.<br /><br />' . 
+		'<a href="?a=refreshCache">Reg&eacute;n&eacute;rez le classement g&eacute;n&eacute;ral</a>');
 
 
 define(VR_PROFIL_URL, 'http://www.virtualregatta.com/player.php?id_player=');
