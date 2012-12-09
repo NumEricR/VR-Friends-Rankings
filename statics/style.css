@@ -91,6 +91,16 @@ a:hover {
 .error p {
 	font-size: 1.6em;
 }
+.error p + p {
+	margin-top: 30px;
+}
+
+.error code {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.228em;
+	font-style: italic;
+}
 
 
 /* Footer

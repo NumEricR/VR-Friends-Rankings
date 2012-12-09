@@ -15,11 +15,34 @@ function get_all_rankings() {
         $output = file_get_contents(CACHE_FILE);
 	}
 	else {
-		$output = _generate_all_rankings();
-		_refresh_cache($output);
+		// Generate rankings and update cache
+		if (_is_good_boats_list()) {
+			$output = _generate_all_rankings();
+			_refresh_cache($output);
+		}
+		// Error on boats list configuration
+		else {
+			$output = '<div class="error"><h1>Erreur</h1>' . ERROR_MSG_BOATS_LIST . '</div>';
+		}
 	}
 	
 	return $output;
+}
+
+
+/**
+ * Check if boats list is correctly filled in config.php file
+ * @return Boolean
+ */
+function _is_good_boats_list() {
+	global $BOATS;
+
+	// Empty array
+	if (!count($BOATS)) {
+		return false;
+	}
+
+	return true;
 }
 
 
