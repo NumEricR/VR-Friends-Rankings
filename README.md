@@ -22,7 +22,7 @@ You can find players' ID on [your friends list](http://www.virtualregatta.com/pr
 
 ## TODO
 
-* Check if boats list is empty
+* Check boats list configuration
 * Add automatic import of friends list
 * Check data before cache update
 * Check browsers compatibility
