@@ -149,7 +149,7 @@ function _extract_boat_ranking($boat, $req_output) {
 	$output = preg_replace('/<tr class="boat">/', $new_tr_tag, $output);
 	
 	// Add a title on the ranking link
-	$output = preg_replace('/<td>(\s*)<a href="(.*?)"/', '<td>$1<a title="Profil du joueur sur \'L\'annexe des SO\'" href="$2"', $output);
+	$output = preg_replace('/<td>(\s*)<a href="(.*?)"/', '<td>$1<a title="Profil du joueur sur \'L\'Annexe des SO\'" href="$2"', $output);
 
 	// Add links to the profile pages of current boat
 	$link_to_VR_profile = '<a href="http://www.virtualregatta.com/player.php?id_player=' . $BOATS[$boat]['id'] . 
