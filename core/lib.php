@@ -10,6 +10,7 @@ $update_time = array();
  */
 function get_all_rankings() {
 	$expire_time = time() - CACHE_LIFETIME;
+	// Get rankings from cache
 	if (file_exists(CACHE_FILE) && filemtime(CACHE_FILE) > $expire_time) {
         $output = file_get_contents(CACHE_FILE);
 	}
@@ -49,6 +50,7 @@ function _generate_all_rankings() {
 	}
 
 	global $update_time;
+	// Rankings retreived at differents times
 	if (sizeof($update_time) > 1) {
 		return '<div class="error"><h1>Erreur</h1><p>' . ERROR_MSG_MULTIPLES_TIMES_UPDATE . '</p></div>';
 	}
